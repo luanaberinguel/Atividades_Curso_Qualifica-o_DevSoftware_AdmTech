@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class exer2 {
+
+    public static void main(String[] args) {
+
+        java.util.Scanner numero = new Scanner(System.in);
+        int num;
+
+        System.out.print("Entre com numero: ");
+        num = numero.nextInt();
+        
+        if(num>=0 && num<=9){
+
+            System.out.println("Valor Válido");
+
+        } else {
+            System.out.println("Valor Inválido!");
+        }
+
+    }
+    
+}
