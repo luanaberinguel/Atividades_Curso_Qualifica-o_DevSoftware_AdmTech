@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class exer1 {
+
+public static void main(String[] args) {
+
+    java.util.Scanner numero = new Scanner(System.in);
+    int n1,n2;
+
+    System.out.print("Entre com o primeiro numero: ");
+        n1 = numero.nextInt();
+
+    System.out.print("Entre com o segundo numero: ");
+        n2 = numero.nextInt();
+
+        if (n1>n2){
+
+            System.out.println("O número " + n1 + " é maior do que " + n2);
+        } if (n1<n2) {
+            System.out.println("O número " + n2 + " é maior do que " + n1);
+                    
+        } else {
+            System.out.println("Os dois números são iguais.");
+            
+        }
+
+    
+}
+
+    
+}
