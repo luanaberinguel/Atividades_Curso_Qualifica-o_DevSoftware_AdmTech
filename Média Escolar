@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class mediaAluno{
+
+    public static void main(String[] args) {
+
+        java.util.Scanner nota = new Scanner(System.in);
+        double n1, n2, n3, n4, media, recuperacaoNota, novNota;
+        boolean Aprovacao = false;
+
+        System.out.print("Entre com a primeira nota do aluno:");
+        n1 = nota.nextDouble();
+
+        System.out.print( "Entre com a segunda nota do aluno: "); 
+        n2 = nota.nextDouble();
+
+        System.out.print( "Entre com a terceira nota do aluno: ");
+        n3 = nota.nextDouble();
+
+        System.out.print( "Entre com a quarta nota do aluno: ");
+        n4 = nota.nextDouble();
+              
+        media = (n1+n2+n3+n4)/4;
+
+        if(media>=7) Aprovacao = true;
+        else{
+            System.out.println("O aluno está de recuperação, digite a nota: ");
+            recuperacaoNota = nota.nextDouble();
+            media=(media+recuperacaoNota)/2;
+        if(media>=7) Aprovacao = true;
+        }
+
+        if(Aprovacao==true){
+            System.out.println("\n\nO aluno foi aprovado com a média " + media);
+        }else{
+            System.out.println("\n\nO aluno foi reprovado com a média " + media);
+        }
+
+    }
+}
